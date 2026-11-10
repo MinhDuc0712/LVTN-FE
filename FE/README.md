@@ -1,12 +1,55 @@
-# React + Vite
+# Frontend — Graduation Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend for the full-stack graduation project. The Laravel API is maintained in a separate repository: [LVTN_BE](https://github.com/MinhDuc0712/LVTN_BE).
 
-Currently, two official plugins are available:
+For the combined project overview, see the [main project README](https://github.com/MinhDuc0712/LVTN-FE).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology stack
 
-## Expanding the ESLint configuration
+- React 19
+- Vite 6
+- React Router 7
+- TanStack Query 5
+- Tailwind CSS 4
+- Axios
+- MapLibre GL
+- Recharts
+- React Toastify
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Requirements
+
+- Node.js (use a current LTS release)
+- npm
+
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+Vite will print the local development URL in the terminal.
+
+## Available scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint |
+
+## Backend integration
+
+1. Clone and configure [LVTN_BE](https://github.com/MinhDuc0712/LVTN_BE).
+2. Start the Laravel API.
+3. Configure the frontend's local environment with the API base URL and any required third-party service settings.
+4. Ensure Laravel CORS settings allow the frontend origin.
+
+Use your own local environment file for credentials. Never commit API keys, tokens, passwords, or other secrets.
+
+## Notes
+
+The project uses React Router for navigation, TanStack Query for server-state management and Axios for HTTP requests. Map and chart-related dependencies are included in the frontend package configuration.
+
+For the complete project description and the backend repository, visit the [main project README](https://github.com/MinhDuc0712/LVTN-FE).
